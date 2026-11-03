@@ -1,0 +1,12 @@
+{
+  "name": "aura-atlas-sweph",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Swiss Ephemeris 2.10.03 as a Cloudflare Worker reachable only through service bindings",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

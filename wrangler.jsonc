@@ -1,0 +1,11 @@
+{
+  // Reachable only through service bindings from other Workers on the same account: no workers.dev URL, no routes.
+  "name": "aura-atlas-sweph",
+  "main": "worker.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "rules": [{ "type": "CompiledWasm", "globs": ["**/*.wasm"], "fallthrough": false }]
+}
