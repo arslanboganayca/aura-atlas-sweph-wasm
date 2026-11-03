@@ -7,5 +7,9 @@
   "workers_dev": false,
   "preview_urls": false,
   "observability": { "enabled": false },
-  "rules": [{ "type": "CompiledWasm", "globs": ["**/*.wasm"], "fallthrough": false }]
+  "rules": [{ "type": "CompiledWasm", "globs": ["**/*.wasm"], "fallthrough": false }],
+  // The TEST website Worker binds to its own copy: `npx wrangler deploy --env test` → aura-atlas-sweph-test.
+  "env": {
+    "test": { "name": "aura-atlas-sweph-test" }
+  }
 }

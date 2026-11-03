@@ -112,8 +112,9 @@ and every design moment is the same to the millisecond.
 Deployed by the Aura Atlas maintainers to their own Cloudflare account, before the website Worker that binds to it:
 
 ```
-npx wrangler deploy
+npx wrangler deploy --env test   # aura-atlas-sweph-test, for the TEST website
+npx wrangler deploy --env=""     # aura-atlas-sweph, for auraatlas.co
 ```
 
-The website reaches it through a service binding (`services: [{ binding: "SWEPH", service: "aura-atlas-sweph" }]`) and
+The website reaches it through a service binding (`services: [{ binding: "SWEPH", service: "aura-atlas-sweph" }]`, `aura-atlas-sweph-test` for the TEST website) and
 checks `swe_version` on every chart.
